@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@f0x52/eslint-config": "^1.0.1",
+    "eslint": "^7.17.0"
+  },
+  "dependencies": {
+    "mqtt": "^4.2.6",
+    "mumble-ping": "^1.0.0"
+  }
+}
