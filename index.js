@@ -3,7 +3,13 @@
 const MumblePing = require('mumble-ping');
 const mqtt = require("mqtt");
 
-const mqttClient = mqtt.connect("mqtt://mosquitto.space.revspace.nl");
+const mqttClient = mqtt.connect("mqtt://mosquitto.space.revspace.nl", {
+	will: {
+		topic: "revspace/m",
+		payload: "E_BOT_STUK",
+		retain: true,
+	}
+});
 
 let users;
 let lastPing = new Date().getTime();
